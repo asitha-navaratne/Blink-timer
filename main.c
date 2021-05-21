@@ -7,6 +7,7 @@
 #define LED_PORT 	PORTC							///< Port of indicator LED.
 #define LED_PIN		PC0								///< Pin of indicator LED.
 
+void PORT_INIT(void);
 void TIMER_INIT(void);
 
 volatile uint16_t milliseconds = 0;					///< Variable to hold the milliseconds elapsed.
@@ -20,7 +21,7 @@ ISR(TIMER0_COMP_vect){
 }
 
 int main(void){
-	LED_DDR |= (1<<LED_PIN);
+	PORT_INIT();
 	TIMER_INIT();
 	uint16_t delay = 1000;							///< Variable to hold the required delay time in milliseconds.
 	
@@ -32,6 +33,14 @@ int main(void){
 			milliseconds = 0;
 		}
 	}
+}
+
+/*!
+ *	@brief Initialize Ports.
+ */
+
+void PORT_INIT(void){
+	LED_DDR |= (1<<LED_PIN);
 }
 
 /*!
