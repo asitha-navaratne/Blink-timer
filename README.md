@@ -1,6 +1,6 @@
 # Blink-timer
 
-<p align="justify">The ATmega32A has three inbuilt timer/counter modules; the 8-bit timer/counter0 and timer/counter2, and the 16-bit timer/counter1. These timer/counter modules can be used to create precise delays, count events and generate PWM waveforms.</p>
+<p align="justify">The ATmega32A has three inbuilt timer/counter modules; the 8-bit timer/counter0 and timer/counter2, and the 16-bit timer/counter1. These timer/counter units can be used to create precise delays, count events and generate PWM waveforms.</p>
 
 <p align="justify">In this code an LED is made to blink at a precise time interval using timer/counter0 Compare Match Interrupts.</p>
 
