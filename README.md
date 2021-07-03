@@ -11,4 +11,4 @@ TCNT0 is equal to the value in OCR0 i.e. 125. Since the clock rate is 125 kHz, t
 
 <p align="justify">Whenever the value of <em>milliseconds</em> matches the value of the <em>delay</em> variable (in milliseconds), the LED pin is toggled and the value of <em>milliseconds</em> is cleared.</p>
 
-<p align="justify">For information about interrupts, visit my External-interrupts repo <a href="https://github.com/asitha-navaratne/External-interrupts">here</a></p>
+<p align="justify">For information about interrupts, visit my External-interrupts repo <a href="https://github.com/asitha-navaratne/External-interrupts">here</a>.</p>
